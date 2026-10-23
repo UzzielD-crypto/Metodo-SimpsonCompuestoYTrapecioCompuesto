@@ -3,13 +3,6 @@
 # COMPARACIÓN ENTRE LOS DOS MÉTODOS (SIMPSON Y TRAPECIO)
 
 #EJECUCIÓN DE CADA UNO:
-#MÉTODO SIMPSÓN:
----ITERACIONES (SIMPSON COMPUESTO) ---
-n = 2 | Integral = 2.6666666666666665
-n = 4 | Integral = 2.6666666666666665 | Error absoluto: 0.0
-
-Resultado final Simpson obtenido: 2.6666666666666665
-#MÉTODO TRAPECIO:
 ---ITERACIONES (TRAPECIO COMPUESTO) ---
 n = 2 | Integral = 3.0
 n = 4 | Integral = 2.75 | Error absoluto: 0.25
@@ -21,6 +14,13 @@ n = 128 | Integral = 2.666748046875 | Error absoluto: 2.44140625E-4
 n = 256 | Integral = 2.66668701171875 | Error absoluto: 6.103515625E-5
 
 Resultado final Trapecio obtenido: 2.66668701171875
+
+---ITERACIONES (SIMPSON COMPUESTO) ---
+n = 2 | Integral = 2.6666666666666665
+n = 4 | Integral = 2.6666666666666665 | Error absoluto: 0.0
+
+Resultado final Simpson obtenido: 2.6666666666666665
+
 Como se puede obervar el método trapecio compuesto requiere de más iteraciones para poder llegar a la aproxionamción requerida que en este caso se usaron 7 con aproximadamente 128 subintervalos y dandonos un valor de: 2.6666646728515625 el cual el valor analítico exacto es 8/3= 2.6666667.
 Por otro lado el método Simpson Compuesto útilizo 1 iteración, 4 subintervalos para poder alcanzar la convergencia de forma exacta casi sin ningún inconveniente esto gracias a que "la regla de Simpson 1/3" integra de manera "exacta" los polinomios de hasta grado 3 usando parábolas y todo esto dando como valor de la integral aproximada: 2.6666666666666665
 Se concluye que el metodo Simpson es el más apto debido a que muestra cierta superioridad, una drástica velocidad y una precisión para resolver funciones polinimicas ya que solo requirio 4 subintervalos mientras que el otro uso 128 subintervalos para poder cumplir lo requerido.
@@ -37,3 +37,8 @@ Simpson 1/3 dice que al unir muchas parábolas contiguas, los nodos interiores s
 Nodos impares: Estos actuán siempre como el punto central de la parábola en curso, multiplicandose por el coeficiente 4 exigido por la deducción matemática.
 Nodos pares: Actuan como un enlace el cual termina en una parabola y comienza lo siguiente, por ende estos puntos se comparten y son extremos comunes para dos parábolas vécinas.
 
+## ESTRUCTURA DEL PROYECTO.
+
+- `TrapecioCompuesto.java`: Contiene la función matemática a integrar, el cálculo de pasos "h", el método base del trapecio y la iteración con tolerancia.
+- `SimpsonCompuesto.java`: Contiene la implementación de la regla de Simpson 1/3 compuesta y su respectiva iteración con tolerancia.
+- `MainTrap.java`: Clase principal (`main`) para ejecutar y comparar ambos métodos.
