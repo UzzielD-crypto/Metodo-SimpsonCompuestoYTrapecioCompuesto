@@ -3,20 +3,22 @@
 # COMPARACIÓN ENTRE LOS DOS MÉTODOS (SIMPSON Y TRAPECIO)
 
 #EJECUCIÓN DE CADA UNO:
----ITERACIONES (TRAPECIO COMPUESTO) ---
-n = 2 | Integral = 3.0
-n = 4 | Integral = 2.75 | Error absoluto: 0.25
-n = 8 | Integral = 2.6875 | Error absoluto: 0.0625
-n = 16 | Integral = 2.671875 | Error absoluto: 0.015625
-n = 32 | Integral = 2.66796875 | Error absoluto: 0.00390625
-n = 64 | Integral = 2.6669921875 | Error absoluto: 9.765625E-4
-n = 128 | Integral = 2.666748046875 | Error absoluto: 2.44140625E-4
+```text
+#EJECUCIÓN DE CADA UNO: 
+---ITERACIONES (TRAPECIO COMPUESTO) --- 
+n = 2 | Integral = 3.0 
+n = 4 | Integral = 2.75 | Error absoluto: 0.25 
+n = 8 | Integral = 2.6875 | Error absoluto: 0.0625 
+n = 16 | Integral = 2.671875 | Error absoluto: 0.015625 
+n = 32 | Integral = 2.66796875 | Error absoluto: 0.00390625 
+n = 64 | Integral = 2.6669921875 | Error absoluto: 9.765625E-4 
+n = 128 | Integral = 2.666748046875 | Error absoluto: 2.44140625E-4 
 n = 256 | Integral = 2.66668701171875 | Error absoluto: 6.103515625E-5
 
 Resultado final Trapecio obtenido: 2.66668701171875
 
----ITERACIONES (SIMPSON COMPUESTO) ---
-n = 2 | Integral = 2.6666666666666665
+---ITERACIONES (SIMPSON COMPUESTO) --- 
+n = 2 | Integral = 2.6666666666666665 
 n = 4 | Integral = 2.6666666666666665 | Error absoluto: 0.0
 
 Resultado final Simpson obtenido: 2.6666666666666665
